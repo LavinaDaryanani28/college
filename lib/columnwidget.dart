@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:project1/Input.dart';
 import 'package:project1/listview.dart';
+import 'package:project1/splashscreen.dart';
 
 void main() {
   runApp(Test());
@@ -11,7 +12,7 @@ class Test extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "First App",
-      home: Input(),
+      home: Splashscreen(),
       debugShowCheckedModeBanner: false,
     );
   }
