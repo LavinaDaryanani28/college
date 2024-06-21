@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:project1/test.dart';
+import 'package:project1/sharedpref.dart';
 
 import 'Input.dart';
 import 'firstscreen.dart';
@@ -17,9 +17,10 @@ class Splashscreen extends StatefulWidget {
 class _SplashScreenState extends State<Splashscreen> {
   @override
   void initState() {
-    Timer(Duration(seconds: 1), () {
+    Timer(Duration(seconds: 1), () async{
+      // SharedPreferences prefs =  await SharedPreferences.getInstance();
       Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => FirstScreen1()));
+          context, MaterialPageRoute(builder: (context) => Sharedpref()));
     });
     super.initState();
   }
